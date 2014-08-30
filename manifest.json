@@ -1,0 +1,12 @@
+{
+  "name": "ReddiTab Comments",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Always open Reddit comment page links in new tabs.",
+  "content_scripts": [
+    {
+      "matches": ["http://www.reddit.com/*"],
+      "js" : ["jquery-1.11.1.min.js", "contentscript.js"]
+    }
+  ]
+}
